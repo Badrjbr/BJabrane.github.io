@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Arial Narrow', 'Franklin Gothic Medium',  Arial, sans-serif;
+  background-color: #1e1f21;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0 10px;
+  overflow: auto;
+  min-height: 200vh;
+  
+}
+
+
+.nav-bar{
+  display: flex;
+  width: 55vw;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#menu,#search{
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
+
+#logo{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight:lighter;
+  text-transform: uppercase;
+}
+
+
+
+.grid-container {
+  display: grid;
+  width:55vw;
+  min-height: 160vh;
+  grid-template-rows: repeat(10, 10%);
+  grid-template-columns: repeat(6, 16.6%); /* Adjusted value */
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.grid-item{
+  background-color: #1e1f21;
+  display: flex;
+  max-width: fit-content;
+  }
+
+
+.item1 {
+  grid-column: span 6;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  }
+
+.item2{
+  grid-column: span 2;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: right;
+}
+
+.item3{
+  grid-column: span 4;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: left;
+}
+
+.item4{
+  grid-column: span 4;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: right;
+}
+
+.item5{
+  grid-row: span 4;
+  grid-column: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: left;
+}
+
+.item6{
+  grid-column: span 2;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: left;
+}
+
+.item7{
+  grid-column: span 2;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: left;
+}
+
+.item8{
+  grid-column: span 3;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: left;
+}
+
+.item9{
+  grid-column: span 3;
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+  justify-content: right;
+  }
